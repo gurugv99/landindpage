@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 1000;
+}
+
+header .logo{
+    
+    max-width: 100px;
+    margin-left: 14%;
+    margin-top: 3.5%
+    
+  
+}
+
+header .toggle{
+
+    max-width: 60px;
+    cursor: pointer;
+}
+
+header .logo img,
+header .toggle img 
+{
+    max-width: 100%;
+    
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    background: url(https://c4.wallpaperflare.com/wallpaper/515/326/465/iron-man-wallpaper-preview.jpg);
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.banner .content {
+
+    max-width: 550px;
+}
+.banner .content h2 {
+
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    margin-left: 33%;
+    margin-bottom: 2%;
+    margin-top: 7%;
+    color: rgb(255, 81, 0);
+    text-decoration: wavy;
+}
+.banner .content h2  {
+
+    font-weight: 800;
+    font-family: 'Times New Roman';
+}
+.banner .content p{
+
+    font-size: 1.2em;
+    font-weight: 300;
+    letter-spacing: 0em;
+    line-height: 1.5em;
+    color: #fff;
+    margin-bottom: 10%;
+    margin-right: 30px; 
+    margin-left: 33%;
+}
+.banner .content pre{
+    color: rgb(255, 81, 0);
+font-weight: 300;
+font-size: larger;
+}
+/* .banner .content a img{
+    margin-left: 1%;
+} */
+
+.play{
+    position: relative;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    margin-left: 33%;
+    margin-bottom: 3%;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+}
+
+.play img{
+    margin-right: 10px;
+    max-width: 50px;
+}
+
+
+@keyframes animate
+{
+    0%,100%
+    {
+        background-position: left;
+    }
+    45%,55%
+    {
+        background-position: right;
+    }
+}
+
+@media (max-width: 991px)
+{
+    header {
+        padding: 20px 50px;
+    }
+    header {
+        padding: 20px 50px;
+    }
+    header .logo {
+        max-width: 80px;
+    }
+    header .toggle {
+        max-width: 40px;
+    }
+    .banner {
+        padding: 100px 50px;
+    }
+    .banner .content h2
+    {
+        font-weight: 400;
+        font-size: 2em;
+        letter-spacing: 0.05em;
+    }
+    .banner .content p
+    {
+        font-size: 1em;
+    }
+    .slide
+    {
+        position: relative;
+        bottom: initial;
+        left: 0;
+        width: 250px;
+        height: 150px;
+        margin: 20px 0;
+    }
+    .sci
+    {
+        position: absolute;
+        top: initial;
+        right: initial;
+        margin-top: 40px;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .sci li
+    {
+        list-style: none;
+        margin: 0.5px;
+    }
+}
